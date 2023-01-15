@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    background-image: url("./background.jpg");
+    background-size: cover;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+select {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 8px;
+    color: white;
+}
+
+ul li select option {
+    background-color: grey;
+}
+
+.language-contact {
+    position: relative;
+    left: -30px;
+}
+
+.contact-button {
+    display: inline-block;
+    color: white;
+    margin-left: 20px;
+    position: relative;
+    padding: 10px;
+    transition: 0.4s;
+}
+
+.contact-button::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    right: 50%;
+    bottom: 0;
+    width: 0;
+    background: red;
+    transition: 0.5s ease-out;
+}
+
+.contact-button:hover::after {
+    width: 100%;
+    right: 0;
+}
+
+.contact-button:hover {
+    color: red;
+}
+
+.form {
+    margin: 90px 100px 0 100px;
+    text-align: center;
+}
+
+.name-input, .password-input {
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.064);
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 700px;  
+    height: 60px;
+    padding: 20px;
+}
+
+.submit-input {
+    margin-top: 25px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    transition: 0.3s ease-out;
+}
+
+.submit-input:hover {
+    background-color: white;
+    color: red;
+}
+
+.checkbox-account {
+    margin: 20px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+}
+
+.checkbox-account .checkbox input {
+    border: none;
+    background-color: red;
+}
