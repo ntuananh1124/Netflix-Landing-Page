@@ -71,14 +71,35 @@ ul li select option {
     text-align: center;
 }
 
-.name-input, .password-input {
+.input-name, .password-input {
     margin-top: 30px;
     background-color: rgba(255, 255, 255, 0.064);
-    border: 1px solid white;
+    border: 3px solid white;
+    color: white;
+    border: 1px solid transparent;
     border-radius: 5px;
     width: 700px;  
     height: 60px;
     padding: 20px;
+    outline: none !important;
+    transition: 0.25s ease-out;
+}
+/* 
+.username .password {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+label {
+    position: absolute;
+    left: 0;
+    color: white;
+} */
+
+.input-name:focus,
+.password-input:focus {
+    border-color: red;
 }
 
 .submit-input {

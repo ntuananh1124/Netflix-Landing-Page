@@ -25,7 +25,7 @@
                 </select>
             </li>
             <li>
-                <a href="https://help.netflix.com/contactus" style="text-decoration: none;" class="contact-button" target="blank">Contact Us</a>
+                <a href="https://help.netflix.com/contactus" style="text-decoration: none;" class="contact-button" target="_blank">Contact Us</a>
             </li>
         </ul>
     </nav>
@@ -33,8 +33,14 @@
         <h1 style="color: white;">Login to Netflix</h1>
         <form action="" class="login-form">
             <div class="name-password">
-                <input type="text" class="name-input" placeholder="Username">
-                <input type="password" class="password-input" placeholder="Password">
+                <div class="username">
+                    <input type="text" class="input-name" placeholder="Username">
+                    <!-- <label for="name" class="form-name">Name</label> -->
+                </div>
+                <div class="password">
+                    <input type="password" class="password-input" placeholder="Password">
+                    <!-- <label for="password" class="form-password">Password</label> -->
+                </div>
             </div>
             <div class="checkbox-account">
                 <div class="checkbox">
@@ -42,7 +48,7 @@
                     <span style="color: white;">I agreed to the terms and conditions</span>
                 </div>
                 <div class="account">
-                    <a href="https://www.netflix.com/vn-en/LoginHelp" style="text-decoration: none; color: red; margin-left: 2px;">Forgot password</a>
+                    <a href="https://www.netflix.com/vn-en/LoginHelp" style="text-decoration: none; color: red; margin-left: 2px;" target="_blank">Forgot password</a>
                 </div>
             </div>
             <input type="submit" class="submit-input" value="Login">
